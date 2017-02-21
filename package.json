@@ -3,7 +3,15 @@
   "version": "0.1.0",
   "description": "Node.js library implementing the rules of the Psycho Grid game",
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"**/*.js\"",
+    "test": "npm run lint"
+  },
   "repository": "https://github.com/platinumazure/psycho-grid",
   "author": "Kevin Partington <kevin.partington@kernelpanicstudios.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.16.0"
+  }
 }
