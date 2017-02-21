@@ -1,0 +1,9 @@
+{
+  "name": "psycho-grid",
+  "version": "0.1.0",
+  "description": "Node.js library implementing the rules of the Psycho Grid game",
+  "main": "index.js",
+  "repository": "https://github.com/platinumazure/psycho-grid",
+  "author": "Kevin Partington <kevin.partington@kernelpanicstudios.com>",
+  "license": "MIT"
+}
