@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Node.js library implementing the rules of the Psycho Grid game",
   "main": "index.js",
+  "files": ["lib"],
   "scripts": {
     "lint": "eslint \"**/*.js\"",
     "test": "npm run lint && npm run unittest",
@@ -15,6 +16,10 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.16.0",
+    "eslint-plugin-node": "^4.2.2",
     "mocha": "^3.2.0"
+  },
+  "engines": {
+    "node": "^6.0.0 || ^7.0.0"
   }
 }
