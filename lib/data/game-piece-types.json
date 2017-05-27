@@ -1,0 +1,30 @@
+[
+    {
+        "name": "stoneWarrior",
+        "displayName": "Stone Warrior",
+        "textIcon": "0",
+        "power": 2,
+        "speed": 3
+    },
+    {
+        "name": "slasher",
+        "displayName": "Slasher",
+        "textIcon": "X",
+        "power": 3,
+        "speed": 2
+    },
+    {
+        "name": "spinix",
+        "displayName": "Spinix",
+        "textIcon": ">",
+        "power": 1,
+        "speed": 4
+    },
+    {
+        "name": "hammer",
+        "displayName": "Hammer",
+        "textIcon": "T",
+        "power": 4,
+        "speed": 1
+    }
+]
