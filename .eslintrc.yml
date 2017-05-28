@@ -13,6 +13,11 @@ rules:
   quotes:
     - error
     - double
+  require-jsdoc:
+    - error
+    - require:
+        FunctionDeclaration: true
+        MethodDefinition: true
   semi:
     - error
     - always
