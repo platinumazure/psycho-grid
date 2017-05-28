@@ -3,6 +3,8 @@
  * @author Kevin Partington
  */
 
+"use strict";
+
 const assert = require("chai").assert;
 const GamePiece = require("../../lib/game-piece");
 const GamePieceFactory = require("../../lib/game-piece-factory");

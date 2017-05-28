@@ -3,6 +3,8 @@
  * @author Kevin Partington
  */
 
+"use strict";
+
 const assert = require("chai").assert;
 const Board = require("../../lib/board");
 
