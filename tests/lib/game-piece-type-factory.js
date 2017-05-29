@@ -1,18 +1,18 @@
 /**
- * @fileoverview Unit tests for the game piece factory.
+ * @fileoverview Unit tests for the game piece type factory.
  * @author Kevin Partington
  */
 
 "use strict";
 
 const assert = require("chai").assert;
-const GamePiece = require("../../lib/game-piece");
-const GamePieceFactory = require("../../lib/game-piece-factory");
+const GamePieceType = require("../../lib/game-piece-type");
+const GamePieceTypeFactory = require("../../lib/game-piece-type-factory");
 
-describe("GamePieceFactory", () => {
+describe("GamePieceTypeFactory", () => {
     describe("availablePieceTypes", () => {
         it("should return an object of available piece types", () => {
-            const gamePieceTypes = GamePieceFactory.availablePieceTypes();
+            const gamePieceTypes = GamePieceTypeFactory.availablePieceTypes();
 
             assert.typeOf(gamePieceTypes, "object");
             assert.isAbove(Object.keys(gamePieceTypes).length, 0);
@@ -20,27 +20,27 @@ describe("GamePieceFactory", () => {
     });
 
     describe("createPiece", () => {
-        const gamePieceTypes = GamePieceFactory.availablePieceTypes();
+        const gamePieceTypes = GamePieceTypeFactory.availablePieceTypes();
 
         Object.keys(gamePieceTypes).forEach(pieceName => {
             describe(pieceName, () => {
-                it("should result in valid GamePiece", () => {
+                it("should result in valid GamePieceType", () => {
                     let gamePiece;
 
                     assert.doesNotThrow(
                         () => {
-                            gamePiece = GamePieceFactory.createPiece(pieceName);
+                            gamePiece = GamePieceTypeFactory.createPiece(pieceName);
                         }
                     );
 
-                    assert.instanceOf(gamePiece, GamePiece);
+                    assert.instanceOf(gamePiece, GamePieceType);
                 });
 
                 describe("property deserialization", () => {
                     let gamePiece;
 
                     before(() => {
-                        gamePiece = GamePieceFactory.createPiece(pieceName);
+                        gamePiece = GamePieceTypeFactory.createPiece(pieceName);
                     });
 
                     ["name", "displayName", "textIcon", "power", "speed"].forEach(propName => {
